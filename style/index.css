@@ -13,9 +13,15 @@
 
 .fab {
     font-size: 40px;
-    align-content: space-around;
+    margin-left: 10px;
 }
 
 .food {
     width: 50px;
+}
+
+footer {
+    padding: 50px 0px 50px 0px;
+    background: #f3f2f0;
+    margin-top: 50px;
 }
