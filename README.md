@@ -1,3 +1,3 @@
-# MenuDevRock
+# Menu
 
-Menu para restaurantes 
+Menu para restaurantes

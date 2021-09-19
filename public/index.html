@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/index.css">
+    <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>MenuDevRock</title>
+    <title>Enio's Menu</title>
 </head>
 
 <body>
@@ -16,14 +16,14 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/public/img/food-delivery.png" alt="" class="logo">
+                    <img src="./img/food-delivery.png" alt="" class="logo">
                 </a>
             </div>
         </nav>
     </header>
     <section class="separator">
         <div class="container center">
-            <img src="/public/img/pizza.png" alt="" class="food">
+            <img src="./img/pizza.png" alt="" class="food">
             <h1 class="center">Pizzas</h1>
             <h5 class="center">¡Disfrutá de las mejores pizzas del condado!</h5>
             <figure class="text-center separator">
@@ -85,10 +85,9 @@
             </figure>
         </div>
     </section>
-
     <section class="separator">
         <div class="container center">
-            <img src="/public/img/burger.png" alt="" class="food">
+            <img src="./img/burger.png" alt="" class="food">
             <h1 class="center">Burgers</h1>
             <h5 class="center">¡Las amarás!</h5>
             <figure class="text-center separator">
@@ -150,7 +149,6 @@
             </figure>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="row">
@@ -158,37 +156,15 @@
                 <div class="col-4 center">
                     <i class="fab fa-whatsapp"></i>
                     <i class="fab fa-instagram"></i>
+                    <a href="https://www.linkedin.com/in/eniogonzalez/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
                 <div class="col-4"></div>
             </div>
         </div>
     </footer>
-
-
     <script src="https://kit.fontawesome.com/dad30140ff.js" crossorigin="anonymous"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyD6cibtWUzPiisZIC3v3K43vQij5_CLR_8",
-          authDomain: "eniomenu-app.firebaseapp.com",
-          projectId: "eniomenu-app",
-          storageBucket: "eniomenu-app.appspot.com",
-          messagingSenderId: "1031045921602",
-          appId: "1:1031045921602:web:9b8947ff5420d7e469a6db",
-          measurementId: "G-JZXCNLF9FZ"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
 </body>
 
 </html>
