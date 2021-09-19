@@ -1,89 +1,194 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.0.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.0.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>MenuDevRock</title>
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/public/img/food-delivery.png" alt="" class="logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="separator">
+        <div class="container center">
+            <img src="/public/img/pizza.png" alt="" class="food">
+            <h1 class="center">Pizzas</h1>
+            <h5 class="center">¡Disfrutá de las mejores pizzas del condado!</h5>
+            <figure class="text-center separator">
+                <blockquote class="blockquote">
+                    <p>Pizza napolitana AR$ 500.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Masa madre, 250 g de mozzarella, tomates triturado y <cite title="Source Title">hojas de albahaca.
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Pizza marinara AR$ 550.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Masa madre, pomodoro italiano, ajo, orégano, albahaca fresca de la huerta y <cite
+                        title="Source Title">oliva.
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Pizza mozzarella AR$ 700.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Masa madre, pomodoro italiano, mozzarella, aceitunas verdes, orégano y <cite
+                        title="Source Title">oliva.
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Pizza margherita AR$ 7400.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Masa madre, pomodoro italiano, mozzarella, albahaca y <cite title="Source Title">oliva.
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Pizza capresse AR$ 800.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Masa madre, jamón cocido, tomate fresco en rodajas, ajo, orégano y <cite title="Source Title">oliva
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Pizza siciliana AR$ 850.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Masa madre, pomodoro italiano, mozzarella, panceta affumicate, aceitunas negras y <cite
+                        title="Source Title">oliva.
+                    </cite>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <section class="separator">
+        <div class="container center">
+            <img src="/public/img/burger.png" alt="" class="food">
+            <h1 class="center">Burgers</h1>
+            <h5 class="center">¡Las amarás!</h5>
+            <figure class="text-center separator">
+                <blockquote class="blockquote">
+                    <p>Hércules AR$ 800.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Doble carne, doble, queso cheddar, cuáduple panceta ahumada, pepinos agridulces, lluvia de papas
+                    Pays y <cite title="Source Title">salsa Tasty en pan brioche
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Perla negra AR$ 700.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    simple con jamón cocido, queso cheddar, lechuga, tomate y kétchup de la casa <cite
+                        title="Source Title">en pan brioche de queso gratinado
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Chivirika AR$ 800.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Doble carne, doble cheddar, panceta ahumada, guacamole y salsa criolla <cite title="Source Title">en
+                        pan brioche gratinado
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Organa AR$ 650.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Carne, cheddar, panceta ahumada, manteca de hierbas en <cite title="Source Title">pan gratinado
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Bobby AR$ 500.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Carne, queso dambo, cheddar a la cerveza y mayopesto en <cite title="Source Title">pan gratinado
+                    </cite>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Doble problema AR$ 700.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Doble hamburguesa - <cite title="Source Title">Doble queso
+                    </cite>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 center">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/dad30140ff.js" crossorigin="anonymous"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD6cibtWUzPiisZIC3v3K43vQij5_CLR_8",
+          authDomain: "eniomenu-app.firebaseapp.com",
+          projectId: "eniomenu-app",
+          storageBucket: "eniomenu-app.appspot.com",
+          messagingSenderId: "1031045921602",
+          appId: "1:1031045921602:web:9b8947ff5420d7e469a6db",
+          measurementId: "G-JZXCNLF9FZ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+
 </html>
